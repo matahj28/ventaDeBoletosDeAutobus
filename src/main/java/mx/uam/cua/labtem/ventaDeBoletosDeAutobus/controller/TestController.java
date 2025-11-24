@@ -1,5 +1,7 @@
 package mx.uam.cua.labtem.ventaDeBoletosDeAutobus.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +16,8 @@ public class TestController {
     }
 
     @GetMapping("/holajorge")
-    public String holajorge(){
-        return "Hola Jorge.";
+    public ResponseEntity<String> holajorge(){
+        return new ResponseEntity<>("Hola Jorge", HttpStatus.OK);
     }
 
 }

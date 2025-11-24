@@ -1,4 +1,11 @@
-package mx.uam.cua.labtem.ventaDeBoletosDeAutobus.service.impl;
+package mx.uam.cua.labtem.ventaDeBoletosDeAutobus.service;
 
-public class AutobusService {
+import mx.uam.cua.labtem.ventaDeBoletosDeAutobus.dto.AutobusDTO;
+
+import java.util.List;
+
+public interface AutobusService {
+
+    List<AutobusDTO>  getAutobuses();
+
 }
